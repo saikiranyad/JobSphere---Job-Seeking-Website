@@ -12,7 +12,7 @@ const Login = ({ setToken }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:3000/api/v1/user/adminlogin", {
+            const response = await axios.post("https://jobsphere-backend-56rb.onrender.com/api/v1/user/adminlogin", {
                 email,
                 password,
             });

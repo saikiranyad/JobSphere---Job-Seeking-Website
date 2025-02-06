@@ -17,11 +17,11 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin:['https://job-sphere-job-seeking-website.vercel.app/', 'http://localhost:5179'],
+    origin:['https://job-sphere-job-seeking-website.vercel.app', 'http://localhost:5179'],
     credentials:true
 }
 
-app.use(cors());
+app.use(cors(corsOptions));
 
 const PORT = process.env.PORT || 3000;
 
